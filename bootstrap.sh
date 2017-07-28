@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 function doIt() {
-	rsync --exclude ".git/" \
+	rsync \
 		--exclude ".DS_Store" \
-    --exclude ".editorconfig" \
-    --exclude ".gitignore" \
-    --exclude "install.sh" \
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
+    --exclude ".editorconfig" \
+    --exclude ".git/" \
+    --exclude ".gitignore" \
+    --exclude "Brewfile" \
+    --exclude "install.sh" \
 		-avh --no-perms . ~;
-	source ~/.bash_profile;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

@@ -1,0 +1,75 @@
+"*":
+  "atom-beautify":
+    html:
+      indent_size: 2
+  core:
+    allowPendingPaneItems: false
+    automaticallyUpdate: false
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    openEmptyEditorOnStart: false
+    telemetryConsent: "limited"
+    warnOnLargeFileLimit: 2
+  editor:
+    fontFamily: "FiraCode-Light"
+    invisibles: {}
+    softWrap: true
+  emmet: {}
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "flatwhite-syntax": {}
+  "highlight-selected": {}
+  "language-babel":
+    allowLocalOverride: true
+    autoIndentJSX: false
+    transpileOnSave: false
+  linter: {}
+  "linter-ui-default":
+    panelHeight: 71.5
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "one-dark-ui":
+    fontSize: 11
+  "one-light-ui":
+    layoutMode: "Compact"
+  pigments:
+    markerType: "native-background"
+  "postcss-sorting":
+    notify: false
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierOptions:
+      printWidth: 100
+      semi: false
+      singleQuote: true
+      trailingComma: "all"
+    useEditorConfig: false
+  react:
+    enabledForAllJavascriptFiles: true
+  "tool-bar":
+    visible: false
+  welcome:
+    showOnStartup: false
+".js.jsx.source":
+  editor:
+    autoIndent: true

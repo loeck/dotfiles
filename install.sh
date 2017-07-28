@@ -27,34 +27,8 @@ banner "Updating Homebrew"
 brew update
 brew analytics off
 
-banner "Tapping Additional Homebrew Repos"
-brew tap caskroom/cask
-brew tap caskroom/fonts
-
 banner "Installing Homebrew Packages"
-brew install git
-brew install node --with-full-icu
-brew install openssh
-brew install python
-brew install tig
-brew install vim --with-override-system-vi
-brew install wget --with-iri
-brew install yarn
-brew install zsh
-
-# Homebrew Casks
-banner "Installing Homebrew Casks"
-brew cask install alfred
-brew cask install atom
-brew cask install ccleaner
-brew cask install firefox
-brew cask install font-fira-code
-brew cask install google-chrome
-brew cask install postman
-brew cask install spectacle
-brew cask install spotify
-brew cask install the-unarchiver
-brew cask install vlc
+brew bundle
 
 ################################################################################
 # Yarn
@@ -87,7 +61,26 @@ npm update -g
 yarn global upgrade
 
 ################################################################################
-# General UI/UX
+# Atom
+################################################################################
+
+banner "Install Atom packages"
+
+apm install --packages-file $HOME/.atom/packages.txt
+
+################################################################################
+# Oh My Zsh
+################################################################################
+
+banner "Installing Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+banner "Installing Oh My Zsh plugins"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
+################################################################################
+# General OSX Configuration
 ################################################################################
 
 # Disable the sound effects on boot
@@ -172,8 +165,7 @@ for app in "Activity Monitor" \
 	"Dock" \
 	"Finder" \
 	"Google Chrome" \
-	"SystemUIServer" \
-	"Terminal"; do
+	"SystemUIServer"; do
 	killall "${app}" &> /dev/null
 done
 
