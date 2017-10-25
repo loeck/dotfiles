@@ -1,5 +1,7 @@
 "*":
   "atom-beautify":
+    general:
+      _analyticsUserId: "81e3bb81-075f-4dfe-b56a-2679589560b8"
     html:
       indent_size: 2
   core:
@@ -18,6 +20,7 @@
         "BUCK"
       ]
     openEmptyEditorOnStart: false
+    projectHome: "/Users/lohek/Documents/Projets"
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 2
   editor:
@@ -25,6 +28,8 @@
     invisibles: {}
     softWrap: true
   emmet: {}
+  "exception-reporting":
+    userId: "51631eab-05de-41d4-42b5-39e2bd76bca0"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   "flatwhite-syntax": {}
@@ -34,8 +39,12 @@
     autoIndentJSX: false
     transpileOnSave: false
   linter: {}
+  "linter-stylelint":
+    disableWhenNoConfig: true
+    useStandard: true
   "linter-ui-default":
     panelHeight: 71.5
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
@@ -57,19 +66,30 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+      excludedGlobs: [
+        "package.json"
+      ]
       showInStatusBar: true
     prettierOptions:
-      printWidth: 100
       semi: false
       singleQuote: true
       trailingComma: "all"
     useEditorConfig: false
   react:
     enabledForAllJavascriptFiles: true
+  "remote-sync":
+    monitorFileAnimation: false
+  "sync-settings":
+    _lastBackupHash: "037809a3fab6e608a27fc0aaa7fe661cde26d420"
+    gistId: "5b981ddc86d2111886b7752111ecee4d"
+    personalAccessToken: "8dadf7296a0f5c22752fa55ebf2d702e7f2c6d59"
   "tool-bar":
     visible: false
+  "tree-view":
+    showOnRightSide: false
   welcome:
     showOnStartup: false
 ".js.jsx.source":
   editor:
     autoIndent: true
+
