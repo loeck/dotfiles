@@ -7,6 +7,7 @@ brew 'bash'
 brew 'coreutils'
 brew 'git'
 brew 'htop'
+brew 'libpng'
 brew 'node', args: ['with-full-icu']
 brew 'openssh'
 brew 'python'
