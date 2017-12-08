@@ -69,6 +69,7 @@
       excludedGlobs: [
         "package.json"
       ]
+      isDisabledIfNoConfigFile: true
       showInStatusBar: true
     prettierOptions:
       semi: false
@@ -77,19 +78,12 @@
     useEditorConfig: false
   react:
     enabledForAllJavascriptFiles: true
-  "remote-sync":
-    monitorFileAnimation: false
-  "sync-settings":
-    _lastBackupHash: "037809a3fab6e608a27fc0aaa7fe661cde26d420"
-    gistId: "5b981ddc86d2111886b7752111ecee4d"
-    personalAccessToken: "8dadf7296a0f5c22752fa55ebf2d702e7f2c6d59"
   "tool-bar":
     visible: false
   "tree-view":
-    showOnRightSide: false
+    showOnRightSide: true
   welcome:
     showOnStartup: false
 ".js.jsx.source":
   editor:
     autoIndent: true
-
