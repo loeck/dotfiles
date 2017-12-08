@@ -5,6 +5,8 @@ tap 'caskroom/fonts'
 # Installing Homebrew Packages
 brew 'bash'
 brew 'coreutils'
+brew 'ffmpeg'
+brew 'gifsicle'
 brew 'git'
 brew 'htop'
 brew 'libpng'
