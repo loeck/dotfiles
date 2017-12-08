@@ -19,4 +19,5 @@ linter-eslint@8.4.0
 linter-ui-default@1.6.10
 minimap@4.29.7
 prettier-atom@0.43.0
+sort-lines@0.18.0
 
