@@ -2,8 +2,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "81e3bb81-075f-4dfe-b56a-2679589560b8"
-    html:
-      indent_size: 2
+    html: {}
   core:
     allowPendingPaneItems: false
     automaticallyUpdate: false
@@ -44,7 +43,6 @@
     useStandard: true
   "linter-ui-default":
     panelHeight: 71.5
-    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
