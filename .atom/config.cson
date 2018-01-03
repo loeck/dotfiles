@@ -1,8 +1,4 @@
 "*":
-  "atom-beautify":
-    general:
-      _analyticsUserId: "81e3bb81-075f-4dfe-b56a-2679589560b8"
-    html: {}
   core:
     allowPendingPaneItems: false
     automaticallyUpdate: false
@@ -19,7 +15,6 @@
         "BUCK"
       ]
     openEmptyEditorOnStart: false
-    projectHome: "/Users/lohek/Documents/Projets"
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 2
   editor:
@@ -59,20 +54,11 @@
     layoutMode: "Compact"
   pigments:
     markerType: "native-background"
-  "postcss-sorting":
-    notify: false
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
-      excludedGlobs: [
-        "package.json"
-      ]
       isDisabledIfNoConfigFile: true
       showInStatusBar: true
-    prettierOptions:
-      semi: false
-      singleQuote: true
-      trailingComma: "all"
     useEditorConfig: false
   react:
     enabledForAllJavascriptFiles: true
