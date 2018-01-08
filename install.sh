@@ -69,17 +69,6 @@ banner "Install Atom packages"
 apm install --packages-file $HOME/.atom/packages.txt
 
 ################################################################################
-# Oh My Zsh
-################################################################################
-
-banner "Installing Oh My Zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-banner "Installing Oh My Zsh plugins"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-
-################################################################################
 # General OSX Configuration
 ################################################################################
 
@@ -160,11 +149,21 @@ defaults write com.apple.terminal StringEncodings -array 4
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
 
+################################################################################
+# Oh My Zsh
+################################################################################
+
+banner "Installing Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+banner "Installing Oh My Zsh plugins"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 for app in "Activity Monitor" \
 	"cfprefsd" \
 	"Dock" \
 	"Finder" \
-	"Google Chrome" \
 	"SystemUIServer"; do
 	killall "${app}" &> /dev/null
 done
