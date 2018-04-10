@@ -1,7 +1,6 @@
 "*":
   core:
     allowPendingPaneItems: false
-    automaticallyUpdate: false
     customFileTypes:
       "source.ini": [
         ".buckconfig"

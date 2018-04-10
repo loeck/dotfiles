@@ -1,3 +1,0 @@
-#!/bin/bash
-
-ffmpeg -i $1 -vf scale=640:-1 -r 15 -f gif - | gifsicle --optimize=3 --delay=3 > $2
