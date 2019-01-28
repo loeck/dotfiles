@@ -13,7 +13,6 @@ brew 'libpng'
 brew 'node', args: ['with-full-icu']
 brew 'openssh'
 brew 'python'
-brew 'tig'
 brew 'vim', args: ['with-override-system-vi']
 brew 'wget', args: ['with-iri']
 brew 'yarn'

@@ -1,17 +1,20 @@
 # dotfiles
 
 Copy all config files in `~` directory
+
 ```
 ./bootstrap.sh
 ```
 
 Install soft
+
 ```
 ./install.sh
 ```
 
 # Git credentials
 Copy paste configuration in `.extra`
+
 ```
 GIT_AUTHOR_NAME="Loëck Vézien"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"

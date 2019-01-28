@@ -6,6 +6,9 @@
         ".buckconfig"
         ".flowconfig"
       ]
+      "source.js.jsx": [
+        "js"
+      ]
       "source.json": [
         ".arcconfig"
         "BUCK.autodeps"
@@ -13,11 +16,13 @@
       "source.python": [
         "BUCK"
       ]
+    fileSystemWatcher: "experimental"
     openEmptyEditorOnStart: false
     telemetryConsent: "limited"
     warnOnLargeFileLimit: 2
   editor:
     fontFamily: "FiraCode-Light"
+    fontSize: 15
     invisibles: {}
     softWrap: true
   emmet: {}
@@ -32,11 +37,14 @@
     autoIndentJSX: false
     transpileOnSave: false
   linter: {}
+  "linter-flow":
+    executablePath: "./node_modules/.bin/flow"
   "linter-stylelint":
     disableWhenNoConfig: true
     useStandard: true
   "linter-ui-default":
-    panelHeight: 71.5
+    panelHeight: 182.5
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
@@ -58,9 +66,13 @@
       enabled: true
       isDisabledIfNoConfigFile: true
       showInStatusBar: true
+    prettierOptions: {}
     useEditorConfig: false
   react:
     enabledForAllJavascriptFiles: true
+  swackets:
+    colorParens: true
+    colorSquareBrackets: true
   "tool-bar":
     visible: false
   "tree-view":
